@@ -32,7 +32,6 @@ Retry policy:
 
 {
   "data": [
-  
     {
     {"project_id": <Project ID>,
       "region": <AlloyDB Region>,
@@ -43,6 +42,5 @@ Retry policy:
     {
       ......
     }
-    
   ]
 }
