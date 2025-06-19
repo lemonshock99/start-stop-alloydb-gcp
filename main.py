@@ -1,3 +1,5 @@
+#Function entry point: hello_pubsub
+
 import base64
 import json
 import functions_framework
