@@ -30,17 +30,19 @@ Retry policy:
   pub/sub and chose pubsub topic
 - Message Body
 
-{
-  "data": [
+```
     {
-    {"project_id": <Project ID>,
-      "region": <AlloyDB Region>,
-      "clusterID": <AlloyDB Cluster ID>,
-      "instance_id": <AlloyDB Instance ID>,
-      "action": "start" # start/stop
-    },
-    {
-      ......
+      "data": [
+        {
+        {"project_id": <Project ID>,
+          "region": <AlloyDB Region>,
+          "clusterID": <AlloyDB Cluster ID>,
+          "instance_id": <AlloyDB Instance ID>,
+          "action": "start" # start/stop
+        },
+        {
+          ......
+        }
+      ]
     }
-  ]
-}
+```
