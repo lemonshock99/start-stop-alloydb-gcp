@@ -5,17 +5,17 @@ cloudrun function for start stop alloyDB in GCP
 Cloud Scheduler ------> Pub/Sub ------> Cloudrun Function
 <br/>
 Permission Required <br/>
-**service account permission clourun function** ( Revision > Security > Identity & encryption > service account )
-- AlloyDB admin
+**service account permission clourun function** ( Revision > Security > Identity & encryption > service account ) <br/>
+- AlloyDB admin <br/>
 <br/>
-**add service account Pub/Sub trigger in [ function > security > permission ]**
-- Cloud Run Invoker
+**add service account Pub/Sub trigger in [ function > security > permission ]** <br/>
+- Cloud Run Invoker <br/>
 <br/>
-**adjust retry policy in pub/sub**
-Acknowledgement deadline: 60
-Retry policy:
-- min: 10
-- max: 20
+**adjust retry policy in pub/sub** <br/>
+Acknowledgement deadline: 60 <br/>
+Retry policy: <br/>
+- min: 10 <br/>
+- max: 20 <br/>
 <br/>
 **Cloud Scheduler Configuration**
 - frequency in cron format <br/>
