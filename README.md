@@ -4,8 +4,8 @@ cloudrun function for start stop alloyDB in GCP
 **flow**
 Cloud Scheduler ------> Pub/Sub ------> Cloudrun Function
 
-Permission
-**service account permission**
+Permission Required
+**service account permission clourun function** ( Revision > Security > Identity & encryption > service account )
 - AlloyDB admin
 
 **add service account Pub/Sub trigger in [ function > security > permission ]**
